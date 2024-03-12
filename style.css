@@ -22,7 +22,7 @@ body{
 
 body.escurecer::before{
     content: ""; 
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 26, 0.5);
@@ -30,7 +30,7 @@ body.escurecer::before{
     left: 0;
 }
 
-.header{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,14 +40,14 @@ body.escurecer::before{
     margin-inline: auto;
 }
 
-.header button{
+header button{
     border: none;
     background: none;
     width: fit-content;
     cursor: pointer;
 }
 
-.header nav.mobile{
+header nav.mobile{
     position: fixed;
     background-color: var(--almost-white);
     right: -16rem;
@@ -64,16 +64,16 @@ body.escurecer::before{
     transition: 0.7s;
 }
 
-.header nav.mobile.abrir{
+header nav.mobile.abrir{
     right: 0;
 }
 
-.header nav button{
+header nav button{
     align-self: flex-end;
     margin-bottom: 4rem
 }
 
-.header .mobile a{
+header .mobile a{
     text-decoration: none;
     color: var(--dark-blue);
     font-size: 1.125rem;
